@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://npm.pkg.github.com'
-          cache: 'npm'
+          cache-dependency-path: perfanalytics-api/package-lock.json
       # Runs a single command using the runners shell
       - name: npm install
         run: npm install
